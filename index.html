@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;">
+	<head id="head">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>香蕉视频APP</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="applicable-device" content="pc,mobile">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/appPay.css">
+
+<script type="text/javascript" src="http://www.shareinstall.com.cn/js/page/jshareinstall.min.js?v=cf4947a2f0"></script>
+	<script type="text/javascript">
+    var data = OpenInstall.parseUrlParams();
+    new ShareInstall({
+        appKey : "7EBKER6A2KARFE",
+        onready : function() {
+            var m = this, iosDown = document.getElementById("iosDown"), androidDown = document.getElementById("androidDown");
+            m.schemeWakeup();
+            iosDown.onclick = function() {
+                m.wakeupOrInstall();
+                return false;
+			};
+			androidDown.onclick = function() {
+                m.wakeupOrInstall();
+                return false;
+			};
+        }
+    }, data);
+</script>
+	</head>
+	<body>
+		<div class="main clearfix">
+		<div id="mySwipe" class="swipe swiper-container swiper-container-horizontal">
+		<div class="swipe-wrap swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2250px, 0px, 0px);">
+			<div class="swiper-slide"><img src="images/1.jpg"></div>
+			<div class="swiper-slide"><img src="images/01.jpg"></div>
+			<div class="swiper-slide"><img src="images/001.jpg"></div>
+			<div class="swiper-slide"><img src="images/02.jpg"></div>
+			<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 750px;"><img src="images/01.jpg"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="swiper-pagination swiper-pagination-bullets">
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+		</div>
+		</div>	
+	<div class="top-btn">
+	<script type="text/javascript"> 
+	if (/(android|windows)/i.test(navigator.userAgent)) {
+	document.write('<a id="androidDown" href="javascript:;"><img class="download-ios linkDown" src="images/bt_android.png"></a> <a id="iosDown" href="javascript:;"><img class="download-ios" src="images/bt_ios.png"></a>');
+	} 
+	</script>
+	<script type="text/javascript"> 
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+	document.write('<div class="gonggao" style="font-size: 16px;margin: 10px;font-weight:600;">公告：苹果iOS用户注意了,企业签名版不稳定请安装香蕉极速版！<p><a href="https://www.aa2.app/iosxiufu" target="_blank" style="color: #FF4B8B;text-decoration: underline;">点此查看修复企业签名版方法</a></p></div> <a id="iosDown" href="javascript:;"><img class="download-ios linkDown" src="images/bt_ios.png"></a> <a id="androidDown" href="javascript:;" style="display: inline;"></a> <div class="ios-piao"></div>');
+	} 
+	</script>
+	</div>
+	</div>
+	<div class="content">
+		<div class="tips">
+		<div class="tiyan-tips"><img src="images/top_tip.png"></div>
+		</div>
+	<div class="tips">
+	<img class="sub-title-1" src="images/sub_title.png">
+	<div class="tiyan-tips"><img src="images/11.png"></div>
+	<div class="tiyan-tips"><img src="images/22.png"></div>
+	<div class="tiyan-tips"><img src="images/33.png"></div>
+	</div>
+	<div class="tips">
+	<div class="ios-tips"><img src="images/ios.png"></div>
+	<div class="android-tips"><img src="images/android.png"></div>
+	</div>
+	<div class="join-group">
+		<a href="https://potato.im/joinchat/2801709e288c43b2ad02a1dd914b1795" target="_blank">
+			<div class="join"><img src="images/111.png"></div>
+		</a>
+	</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script>document.documentElement.style.fontSize = document.body.clientWidth / 7.5 + 'px';</script>
+	<script src="js/appPay.min.js"></script>
+	<script type="text/javascript">
+var dm = window.location.href.replace('index.html','');
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+	isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+	isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+	isMobile = isIphone || isAndroid;
+function downloadios(){
+	if(isMobile){
+		var popbox = document.getElementById("mios");
+		popbox.style.display = 'block';
+		TouchSlide({
+			slideCell:'#focus',
+			titCell:'.hd ul',
+			mainCell:'.bd ul',
+			effect:'left',
+			autoPlay:true,
+			autoPage:true,
+			interTime:4000
+		});
+	}else{
+		var popbox = document.getElementById("pcios");
+		popbox.style.display = 'block';
+	}
+}
+function downloadandroid(){
+	if(isMobile){
+		var popbox = document.getElementById('mandroid');
+		popbox.style.display = 'block';
+		TouchSlide({
+			slideCell:'#focus2',
+			titCell:'.hd ul',
+			mainCell:'.bd ul',
+			effect:'left',
+			autoPlay:true,
+			autoPage:true,
+			interTime:4000
+		});
+	}else{
+		var popbox = document.getElementById('pcandroid');
+		popbox.style.display = 'block';
+	}
+}
+function popclose(el){
+	var popbox = document.getElementById(el);
+	popbox.style.display = 'none';
+}
+var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+var weixinTip = $('<div id="weixinTip"><p><img src="images/live_weixin.png" alt="微信打开"/></p></div>');
+var ua1  = navigator.userAgent.toLowerCase();
+	if (ua1.match(/MicroMessenger/i) == "micromessenger") {
+		$("body").append(weixinTip);		
+        }
+	$("#weixinTip").css({
+		"position":"fixed",
+		"left":"0",
+		"top":"0",
+		"height":winHeight,
+		"width":"100%",
+		"z-index":"1000",
+		"background-color":"rgba(0,0,0,0.8)",
+		"filter":"alpha(opacity=80)",
+	});
+	$("#weixinTip p").css({
+		"text-align":"center",
+		"margin-top":"10%",
+		"padding-left":"5%",
+		"padding-right":"5%"
+	});	
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127762750-6"></script>
+<div style="display: none;"><script src="https://s5.cnzz.com/z_stat.php?id=1275632682&web_id=1275632682" language="JavaScript"></script></div>
+<div style="display: none;"><script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1277675900&web_id=1277675900"></script></div>
+<div style="display: none;"><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1277899199&web_id=1277899199"></script></div>
+<div style="display: none;"><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1277975699&web_id=1277975699"></script></div>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-127762750-6');
+</script>
+
+	</body>
+	</html>
