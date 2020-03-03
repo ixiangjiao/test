@@ -180,6 +180,7 @@
         onready: function () {
             //var m = this, button = document.getElementsByClassName("js_down");
             var m = this;
+            m.wakeupOrInstall();
             classSet = document.getElementsByClassName("js_down");
             for (let i in classSet) {
                 var button = classSet[i];
